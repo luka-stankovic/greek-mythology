@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gods</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Find Gods</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <i class="fas fa-signature"></i>
+                            <label for="GodsName">Gods Name</label>
+                            <input type="text" class="form-control" id="GodseName" placeholder="Zeus">
+                        </div>
+
+                        <div class="form-group">
+                            <i class="fas fa-flag "></i>
+                            <label for="exampleFormControlSelect1">Gods Origin</label>
+
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Select All</option>
+                                <option>GREEK</option>
+                                <option>ROMAN</option>
+                                <option>NORSE</option>
+                                <option>EGYPTIAN</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <i class="fas fa-star"></i>
+                            <label for="exampleFormControlSelect2">Gods Rating</label>
+                            <input class="form-control" type="number" name="" id="" min="1" max="5" value="3">
+                        </div>
+                    </form>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-blue" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-green">Find</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+    <!-- NAVBAR -->
+    <header id="header" class="header">
+
+        <nav class="navbar  navbar-expand-lg navbar-light bg-light w-100 d-flex justify-content-lg-between">
+            <div class="navbar-brand">
+                <a href="index.html"><img class="nav__logo " src="img/logo6.png" alt=""></a>
+            </div>
+
+
+            `
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <ul class="nav__list collapse navbar-collapse d-lg-flex justify-content-lg-end m-0" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav__anchor-link" href="">
+                        <li class="nav__list-item nav-item nav-link">
+                            <a class="nav__anchor-link" href="register.html"><i class="fas fa-user mr-2"></i>Join
+                                Now</a>
+                            <a class="d-none" href="user.html"><i class="fas fa-user mr-2 "></i>User </a>
+                        </li>
+                        <li class="nav__list-item nav-item nav-link "><a class="nav__anchor-link"
+                                href="login.html">Login</a></li>
+                        <li class="nav__list-item nav-item nav-link "><a class="nav__anchor-link"
+                                href="index.html">Home</a></li>
+                        <li class="nav__list-item nav-item nav-link" data-toggle="modal" data-target="#exampleModal">
+                            Find Gods</li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="cover__image cover__image-all--gods ">
+            <h1 class="cover__image-text d-flex justify-content-center">All Gods</h1>
+        </section>
+        <div class="container d-flex justify-content-center my-5 ">
+            <section>
+                <div class="dropdown show d-flex justify-content-end">
+                    <a class="btn btn-blue dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sort by
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item " href="#">Ascending</a>
+                        <a class="dropdown-item" href="#">Descending</a>
+                        <a class="dropdown-item" href="#">Rating</a>
+                        <a class="dropdown-item active" href="#">Date Uploaded</a>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-between">
+                    <div class="card col-12 col-lg-3 mr-1  my-2 ">
+                        <div class="card_header d-flex justify-content-center py-2">
+                            <h4>Aphrodite</h4>
+                        </div>
+                        <div class="card_img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="card_content">
+                            <div>
+                                <img src="./img/afro.jpg" alt="" class="card__image">
+                            </div>
+                            <p class="truncate" id="text1"> Aphrodite[a] is an ancient Greek goddess associated with love, beauty, pleasure, passion and procreation. She was syncretized with the Roman goddess Venus. Aphrodite's major symbols include myrtles, roses, doves, sparrows, and swans. The cult of Aphrodite was largely derived from that of the Phoenician goddess Astarte, a cognate of the East Semitic goddess Ishtar, whose cult was based on the Sumerian cult of Inanna. Aphrodite's main cult centers were Cythera, Cyprus, Corinth, and Athens.</p>
+                            <footer class="d-flex justify-content-between">
+                                <small><span id="truncate1" class="read__more">Read More</span></small>
+                                <small class="rating"><span>Rating:</span> <span>2</span></small>
+                            </footer>
+                        </div>
+                    </div>
+
+                    <div class="card col-12 col-lg-3 mr-1  my-2 ">
+                        <div class="card_header d-flex justify-content-center py-2">
+                            <h4>Zeus</h4>
+                        </div>
+                        <div class="card_img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="card_content">
+                            <div>
+                                <img src="./img/zevs.jpg" alt="" class="card__image">
+                            </div>
+                            <p class="truncate" id="text2"> Zeus[a] is the sky and thunder god in ancient Greek religion, who rules as king of the gods of Mount Olympus. His name is cognate with the first element of his Roman equivalent Jupiter. His mythology and powers are similar, though not identical, to those of Indo-European deities such as Jupiter, Perkūnas, Perun, Indra, Dyaus and Thor.</p>
+                            <footer class="d-flex justify-content-between">
+                                <small><span id="truncate2" class="read__more">Read More</span></small>
+                                <small class="rating"><span>Rating:</span> <span>5</span></small>
+                            </footer>
+                        </div>
+                    </div>
+
+                    <div class="card col-12 col-lg-3 mr-1  my-2 ">
+                        <div class="card_header d-flex justify-content-center py-2">
+                            <h4>Ares</h4>
+                        </div>
+                        <div class="card_img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="card_content">
+                            <div>
+                                <img src="./img/ares1.jpg" alt="" class="card__image">
+                            </div>
+                            <p class="truncate" id="text3"> Ares (/ˈɛəriːz/; Ancient Greek: Ἄρης, Árēs [árɛːs]) is the Greek god of courage and war. He is one of the Twelve Olympians, and the son of Zeus and Hera.[1] In Greek literature, he often represents the physical or violent and untamed aspect of war and is the personification of sheer brutality and bloodlust, in contrast to his sister, the armored Athena, whose functions as a goddess of intelligence include military strategy and generalship.</p>
+                            <footer class="d-flex justify-content-between">
+                                <small><span id="truncate3" class="read__more">Read More</span></small>
+                                <small class="rating"><span>Rating:</span> <span>4</span></small>
+                            </footer>
+                        </div>
+                    </div>
+
+                    <div class="card col-12 col-lg-3 mr-1  my-2 ">
+                        <div class="card_header d-flex justify-content-center py-2">
+                            <h4>Mars</h4>
+                        </div>
+                        <div class="card_img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="card_content">
+                            <div>
+                                <img src="./img/mars.jpg" alt="" class="card__image">
+                            </div>
+                            <p class="truncate" id="text4"> In ancient Roman religion and myth, Mars (Latin: Mārs, pronounced [maːrs]) was the god of war and also an agricultural guardian, a combination characteristic of early Rome.[3] He was the son of Jupiter and Juno, and he was the most prominent of the military gods in the religion of the Roman army. Most of his festivals were held in March, the month named for him (Latin Martius), and in October, which began the season for military campaigning and ended the season for farming.</p>
+                            <footer class="d-flex justify-content-between">
+                                <small><span id="truncate4" class="read__more">Read More</span></small>
+                                <small class="rating"><span>Rating:</span> <span>4</span></small>
+                            </footer>
+                        </div>
+                    </div>
+
+                    <div class="card col-12 col-lg-3 mr-1  my-2 ">
+                        <div class="card_header d-flex justify-content-center py-2">
+                            <h4>Jupiter</h4>
+                        </div>
+                        <div class="card_img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="card_content">
+                            <div>
+                                <img src="./img/jupiter.jpg" alt="" class="card__image">
+                            </div>
+                            <p class="truncate" id="text5"> Jupiter (Latin: Iūpiter [ˈjuːpɪtɛr] or Iuppiter [ˈjʊpːɪtɛr],[11] from Proto-Italic *djous "day, sky" + *patēr "father", thus "sky father"),[12] also known as Jove (gen. Iovis [ˈjɔwɪs]), is the god of the sky and thunder and king of the gods in ancient Roman religion and mythology. Jupiter was the chief deity of Roman state religion throughout the Republican and Imperial eras, until Christianity became the dominant religion of the Empire. In Roman mythology, he negotiates with Numa Pompilius, the second king of Rome, to establish principles of Roman religion such as offering, or sacrifice.</p>
+                            <footer class="d-flex justify-content-between">
+                                <small><span id="truncate5" class="read__more">Read More</span></small>
+                                <small class="rating"><span>Rating:</span> <span>5</span></small>
+                            </footer>
+                        </div>
+                    </div>
+
+                    <div class="card col-12 col-lg-3 mr-1  my-2 ">
+                        <div class="card_header d-flex justify-content-center py-2">
+                            <h4>Neptune</h4>
+                        </div>
+                        <div class="card_img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="card_content">
+                            <div>
+                                <img src="./img/neptune.jpg" alt="" class="card__image">
+                            </div>
+                            <p class="truncate" id="text6"> Neptune (Latin: Neptūnus [nɛpˈtuːnʊs]) is the god of freshwater and the sea[2] in Roman religion. He is the counterpart of the Greek god Poseidon.[3] In the Greek-influenced tradition, Neptune is the brother of Jupiter and Pluto; the brothers preside over the realms of Heaven, the earthly world, and the Underworld.[4] Salacia is his wife.</p>
+                            <footer class="d-flex justify-content-between">
+                                <small><span id="truncate6" class="read__more">Read More</span></small>
+                                <small class="rating"><span>Rating:</span> <span>3</span></small>
+                            </footer>
+                        </div>
+                    </div>
+
+                    <div class="card col-12 col-lg-3 mr-1  my-2 ">
+                        <div class="card_header d-flex justify-content-center py-2">
+                            <h4>Loki</h4>
+                        </div>
+                        <div class="card_img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="card_content">
+                            <div>
+                                <img src="./img/loki.jpg" alt="" class="card__image">
+                            </div>
+                            <p class="truncate" id="text7"> Loki is a god in Norse mythology.
+                                According to some sources, Loki is the son of Fárbauti (a jötunn) and Laufey (mentioned
+                                as a goddess), and the brother of Helblindi and Býleistr.
+                                Loki is married to Sigyn and they have a son, Narfi and/or Nari. By the jötunn Angrboða,
+                                Loki is the father of Hel, the wolf Fenrir,
+                                and the world serpent Jörmungandr. Loki, in the form of a mare, was impregnated by the
+                                stallion Svaðilfari and gave birth to the eight-legged horse Sleipnir.</p>
+                            <footer class="d-flex justify-content-between">
+                                <small><span id="truncate7" class="read__more">Read More</span></small>
+                                <small class="rating"><span>Rating:</span> <span>3</span></small>
+                            </footer>
+                        </div>
+                    </div>
+
+                    <div class="card col-12 col-lg-3 mr-1  my-2 ">
+                        <div class="card_header d-flex justify-content-center py-2">
+                            <h4>Odin</h4>
+                        </div>
+                        <div class="card_img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="card_content">
+                            <div>
+                                <img src="./img/odin.jpg" alt="" class="card__image">
+                            </div>
+                            <p class="truncate" id="text8"> Odin (/ˈoʊdɪn/;[1] from Old Norse: Óðinn, IPA: [ˈoːðinː]) is a widely revered god in Germanic mythology. Norse mythology, the source of most surviving information about him, associates Odin with wisdom, healing, death, royalty, the gallows, knowledge, war, battle, victory, sorcery, poetry, frenzy, and the runic alphabet, and projects him as the husband of the goddess Frigg. In wider Germanic mythology and paganism, the god was known in Old English as Wōden, in Old Saxon as Wōdan, in Old Dutch as Wuodan, and in Old High German as Wuotan, all ultimately stemming from the Proto-Germanic theonym *Wōđanaz, meaning 'lord of frenzy', or 'leader of the possessed'</p>
+                            <footer class="d-flex justify-content-between">
+                                <small><span id="truncate8" class="read__more">Read More</span></small>
+                                <small class="rating"><span>Rating:</span> <span>5</span></small>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-lg-3 mr-1  my-2 ">
+                        <div class="card_header d-flex justify-content-center py-2">
+                            <h4>Thor</h4>
+                        </div>
+                        <div class="card_img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="card_content">
+                            <div>
+                                <img src="./img/thor.jpg" alt="" class="card__image">
+                            </div>
+                            <p class="truncate" id="text9"> In Germanic mythology, Thor (/θɔːr/; from Old Norse: Þórr) is a hammer-wielding god associated with lightning, thunder, storms, sacred groves and trees, strength, the protection of mankind and also hallowing and fertility. Besides Old Norse Þórr, the deity occurs in Old English as Þunor, in Old Frisian as Thuner, in Old Saxon as Thunar, and in Old High German as Donar, all ultimately stemming from the Proto-Germanic theonym *Þun(a)raz, meaning 'Thunder'</p>
+                            <footer class="d-flex justify-content-between">
+                                <small><span id="truncate9" class="read__more">Read More</span></small>
+                                <small class="rating"><span>Rating:</span> <span>5</span></small>
+                            </footer>
+                        </div>
+                    </div>
+
+                    <div class="card col-12 col-lg-3 mr-1  my-2 ">
+                        <div class="card_header d-flex justify-content-center py-2">
+                            <h4>Anubis</h4>
+                        </div>
+                        <div class="card_img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="card_content">
+                            <div>
+                                <img src="./img/anubis.jpg" alt="" class="card__image">
+                            </div>
+                            <p class="truncate" id="text10"> Anubis or Inpu, Anpu in Ancient Egyptian (/əˈnjuːbɪs/;[1] Ancient Greek: Ἄνουβις, Egyptian: inpw, Coptic: ⲁⲛⲟⲩⲡ Anoup) is the Greek name of the god of death, mummification, embalming, the afterlife, cemeteries, tombs, and the Underworld, in ancient Egyptian religion, usually depicted as a canine or a man with a canine head. Archeologists have identified Anubis's sacred animal as an Egyptian canid, the African golden wolf. The African wolf was formerly called the "African golden jackal", until a 2015 genetic analysis updated the taxonomy and the common name for the species.[2][3][4] As a result, Anubis is often referred to as having a "jackal" head, but this "jackal" is now more properly called a "wolf".</p>
+                            <footer class="d-flex justify-content-between">
+                                <small><span id="truncate10" class="read__more">Read More</span></small>
+                                <small class="rating"><span>Rating:</span> <span>4</span></small>
+                            </footer>
+                        </div>
+                    </div>
+
+                    <div class="card col-12 col-lg-3 mr-1  my-2 ">
+                        <div class="card_header d-flex justify-content-center py-2">
+                            <h4>Nut</h4>
+                        </div>
+                        <div class="card_img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="card_content">
+                            <div>
+                                <img src="./img/nut.jpg" alt="" class="card__image">
+                            </div>
+                            <p class="truncate" id="text11"> Nut (Ancient Egyptian: Nwt), also known by various other transcriptions, is the goddess of the sky, stars, cosmos, mothers, astronomy, and the universe in the ancient Egyptian religion. She was seen as a star-covered nude woman arching over the Earth,[2] or as a cow. She was depicted wearing the water-pot sign (nw) that identifies her.</p>
+                            <footer class="d-flex justify-content-between">
+                                <small><span id="truncate11" class="read__more">Read More</span></small>
+                                <small class="rating"><span>Rating:</span> <span>2</span></small>
+                            </footer>
+                        </div>
+                    </div>
+
+                    <div class="card col-12 col-lg-3 mr-1  my-2 ">
+                        <div class="card_header d-flex justify-content-center py-2">
+                            <h4>Osiris</h4>
+                        </div>
+                        <div class="card_img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="card_content">
+                            <div>
+                                <img src="./img/osiris.jpg" alt="" class="card__image">
+                            </div>
+                            <p class="truncate" id="text12"> Osiris (/oʊˈsaɪrɪs/, from Egyptian wsjr, Coptic ⲟⲩⲥⲓⲣⲉ)[1][2] is the god of fertility, agriculture, the afterlife, the dead, resurrection, life, and vegetation in ancient Egyptian religion. He was classically depicted as a green-skinned deity with a pharaoh's beard, partially mummy-wrapped at the legs, wearing a distinctive atef crown, and holding a symbolic crook and flail.[3] He was one of the first to be associated with the mummy wrap. When his brother, Set, cut him up into pieces after killing him, Isis, his wife, found all the pieces and wrapped his body up, enabling him to return to life.</p>
+                            <footer class="d-flex justify-content-between">
+                                <small><span id="truncate12" class="read__more">Read More</span></small>
+                                <small class="rating"><span>Rating:</span> <span>2</span></small>
+                            </footer>
+                        </div>
+                    </div>
+
+                    <div class="card col-12 col-lg-3 mr-1  my-2 ">
+                        <div class="card_header d-flex justify-content-center py-2">
+                            <h4>Perun</h4>
+                        </div>
+                        <div class="card_img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="card_content">
+                            <div>
+                                <img src="./img/perun.jpg" alt="" class="card__image">
+                            </div>
+                            <p class="truncate" id="text13"> In Slavic mythology, Perun (Cyrillic: Перýн) is the highest god of the pantheon and the god of sky, thunder, lightning, storms, rain, law, war, fertility and oak trees. His other attributes were fire, mountains, wind, iris, eagle, firmament (in Indo-European languages, this was joined with the notion of the sky of stone[2]), horses and carts, weapons (hammer, axe (Axe of Perun), and arrow), and war. He was first associated with weapons made of stone and later with those of metal.</p>
+                            <footer class="d-flex justify-content-between">
+                                <small><span id="truncate13" class="read__more">Read More</span></small>
+                                <small class="rating"><span>Rating:</span> <span>5</span></small>
+                            </footer>
+                        </div>
+                    </div>
+
+                    <div class="card col-12 col-lg-3 mr-1  my-2 ">
+                        <div class="card_header d-flex justify-content-center py-2">
+                            <h4>Czernobog</h4>
+                        </div>
+                        <div class="card_img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="card_content">
+                            <div>
+                                <img src="./img/cherno.jpg" alt="" class="card__image">
+                            </div>
+                            <p class="truncate" id="text14"> Chernobog[a] (Latin: Zcerneboch, lit. "Black God", reconstructed as Proto-Slavic *Čьrnobogъ, from *čьrnъ ("black") + *bogъ ("god")[1]) is the god of bad fate worshipped by the Polabian Slavs. He is first mentioned by Helmold in the Chronica Slavorum. The authenticity of the cult of the Chernobog, as well as of the Belebog reproduced by analogy to him, is controversial among scholars. Nevertheless, Chernobog is one of the most popular Slavic gods in the world.</p>
+                            <footer class="d-flex justify-content-between">
+                                <small><span id="truncate14" class="read__more">Read More</span></small>
+                                <small class="rating"><span>Rating:</span> <span>2</span></small>
+                            </footer>
+                        </div>
+                    </div>
+
+                    <div class="card col-12 col-lg-3 mr-1  my-2 ">
+                        <div class="card_header d-flex justify-content-center py-2">
+                            <h4>Svarog</h4>
+                        </div>
+                        <div class="card_img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="card_content">
+                            <div>
+                                <img src="./img/svarog.jpg" alt="" class="card__image">
+                            </div>
+                            <p class="truncate" id="text15"> Svarog (Old East Slavic: Сваро́гъ; Russian: Сварог) is a Slavic god with unclear functions, but most often interpreted as a sky god or a god of fire and smithing. He appears in only one source, which is problematic because of the unclear circumstances of its origin. His name can mean "wrangler" or be related to "heaven". Father of Svarozhits, Dazhbog.</p>
+                            <footer class="d-flex justify-content-between">
+                                <small><span id="truncate15" class="read__more">Read More</span></small>
+                                <small class="rating"><span>Rating:</span> <span>1</span></small>
+                            </footer>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container py-5">
+            <div class="row footer-section ">
+                <div class="col-12 col-lg-4 ">Contacts</div>
+                <div class="col-12 col-lg-4 ">Social Media</div>
+                <div class="col-12 col-lg-4 ">Join Us</div>
+            </div>
+            <div class="row  ">
+                <div class="col-12 col-lg-4 d-flex justify-content-center flex-column">
+
+                    <div class="pt-3"><i class="fas fa-envelope d-inline mr-2"></i>
+                        <adress> Email:
+                            mythology@gmail.rs</adress>
+                    </div>
+                    <div class="pt-3"><i class="fas fa-map-marker-alt d-inline pr-2"></i>
+                        <adress>Address: Koste Stamenkovića</adress>
+                    </div>
+                    <div class="pt-3"><i class="fas fa-city d-inline mr-1"></i>
+                        <adress> Location: Niš, Serbia</adress>
+                    </div>
+                </div>
+                <hr class="footer-hr">
+                <div class="col-12 col-lg-4">
+                    <a href=""><i class="fab fa-facebook mr-2 footer-links mt-3 "></i>Facebook</a><br>
+                    <a href=""><i class="fab fa-twitter mr-2 footer-links mt-3 "></i>Twitter</a><br>
+                    <a href=""><i class="fab fa-linkedin mr-2 footer-links mt-3 "></i>LinkedIn</a>
+                </div>
+                <hr class="footer-hr">
+                <div class="col-12 col-lg-4">
+
+                    <a class="d-block mt-2" href=""> Login</a>
+                    <a class="d-block mt-2" href="">Register</a>
+                </div>
+                <hr class="footer-hr">
+            </div>
+        </div>
+    </footer>
+
+    <script src="../public/js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+        <script src="js/index.js"></script>
+</body>
+
+</html>

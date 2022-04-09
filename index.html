@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Mythology</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Find God</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <i class="fas fa-signature"></i>
+                            <label for="GodsName">Gods Name</label>
+                            <input type="text" class="form-control" id="GodsName" placeholder="Zeus">
+                        </div>
+
+                        <div class="form-group">
+                            <i class="fas fa-flag "></i>
+                            <label for="exampleFormControlSelect1">Gods Origin</label>
+
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Select All</option>
+                                <option>GREEK</option>
+                                <option>ROMAN</option>
+                                <option>NORSE</option>
+                                <option>EGYPTIAN</option>
+                                <option>SLAVIC</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <i class="fas fa-star"></i>
+                            <label for="exampleFormControlSelect2">Gods Rating</label>
+                            <input class="form-control" type="number" name="" id="" min="1" max="5" value="3">
+                        </div>
+                    </form>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-blue" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-green">Find</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <header id="header" class="header">
+
+        <nav class="navbar  navbar-expand-lg navbar-light bg-light w-100 d-flex justify-content-lg-between">
+            <div class="navbar-brand">
+                <a href="index.html"><img class="nav__logo " src="img/logo6.png" alt=""></a>
+            </div>
+
+
+            `
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <ul class="nav__list collapse navbar-collapse d-lg-flex justify-content-lg-end m-0" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav__anchor-link" href="">
+                        <li class="nav__list-item nav-item nav-link">
+                            <a class="nav__anchor-link" href="register.html"><i class="fas fa-user mr-2"></i>Join
+                                Now</a>
+                            <a class="d-none" href="user.html"><i class="fas fa-user mr-2 "></i>User </a>
+                        </li>
+                        <li class="nav__list-item nav-item nav-link "><a class="nav__anchor-link"
+                                href="login.html">Login</a></li>
+                        <li class="nav__list-item nav-item nav-link active"><a class="nav__anchor-link"
+                                href="index.html">Home</a></li>
+                        <li class="nav__list-item nav-item nav-link" data-toggle="modal" data-target="#exampleModal">
+                            Find Gods</li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <!-- SREDINA -->
+    <main>
+
+        <section class="cover__image cover__image-welcome">
+            <h1 class="cover__image-text">Welcome<br> To Ancient Mythology</h1>
+        </section>
+
+        <section class="container my-5 ">
+        
+            
+            <article class="about py-5 my-5">
+               <div class="mb-4"> <h2>
+                    About
+                </h2>
+            </div>
+                <p>
+
+                    This is an educational site that helps people get acquainted with the mythology of ancient
+                    civilizations.
+                    Mythology refers to the various ways in which the myths of a group of people are collected or to the
+                    study of such myths.
+                    Myths are stories that people tell to explain nature, history, and customs.
+                    Myth is a characteristic of every culture. Many sources of myths have been suggested,
+                    from personifications of nature or personifications of natural phenomena,
+                    to true or hyperbolic visions of historical events to explanations of existing rituals.
+                    Cultures of collective mythology help to convey affiliation, shared and religious experiences,
+                    patterns of behavior, and moral and practical lessons.
+
+                </p>
+            </article>
+            <article class="about__images">
+                <div class="about_images_header d-flex justify-content-center my-3">
+                    <h3>Similar Gods</h3>
+                </div>
+                <div class="row d-flex justify-content-between">
+                    <div class="card col-12 col-lg-3 ">
+                        <div class="card_header d-flex justify-content-center py-2">
+                            <h4>Loki</h4>
+                        </div>
+                       
+                        <div class="card_content">
+                            <div>
+                                <img src="./img/loki.jpg" alt="" class="card__image">
+                            </div>
+                            <p class="truncate" id="text1"> Loki is a god in Norse mythology.
+                                According to some sources, Loki is the son of Fárbauti (a jötunn) and Laufey (mentioned
+                                as a goddess), and the brother of Helblindi and Býleistr.
+                                Loki is married to Sigyn and they have a son, Narfi and/or Nari. By the jötunn Angrboða,
+                                Loki is the father of Hel, the wolf Fenrir,
+                                and the world serpent Jörmungandr. Loki, in the form of a mare, was impregnated by the
+                                stallion Svaðilfari and gave birth to the eight-legged horse Sleipnir.
+                            </p>
+                            <small><span id="truncate1" class="read__more">Read More</span></small>
+                        </div>
+                    </div>
+
+                    <div class="card col-12 col-lg-3 ">
+                        <div class="card_header d-flex justify-content-center py-2">
+                            <h4>Ares</h4>
+                        </div>
+                        <div class="card_content">
+                            <div>
+                                <img src="./img/ares1.jpg" alt="" class="card__image">
+                            </div>
+                            <p class="truncate" id="text2"> Ares is the Greek god of courage and war.
+                                He is one of the Twelve Olympians, and the son of Zeus and Hera. In Greek literature,
+                                he often represents the physical or violent and untamed aspect of war and is the
+                                personification of sheer brutality and bloodlust,
+                                in contrast to his sister, the armored Athena, whose functions as a goddess of
+                                intelligence include military strategy and generalship.</p>
+                            <small><span id="truncate2" class="read__more">Read More</span></small>
+                        </div>
+                    </div>
+
+
+                    <div class="card col-12 col-lg-3 ">
+                        <div class="card_header d-flex justify-content-center py-2">
+                            <h4>Mars</h4>
+                        </div>
+                        <div class="card_content">
+                            <div>
+                                <img src="./img/mars.jpg" alt="" class="card__image">
+                            </div>
+                            <p class="truncate" id="text3"> In ancient Roman religion and myth, Mars was the god of war and also an agricultural
+                                guardian,
+                                a combination characteristic of early Rome. He was the son of Jupiter and Juno, and he
+                                was the most prominent of the military gods in the religion
+                                of the Roman army. Most of his festivals were held in March, the month named for him
+                                (Latin Martius), and in October, which began the season for military
+                                campaigning and ended the season for farming.</p>
+                            <small><span id="truncate3" class="read__more">Read More</span></small>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+        </section>
+        <section class="cover__image cover__image-rating">
+            <h2 class="cover__image-text">Most<br>Rated Gods</h2>
+        </section>
+        <section class="container my-5">
+
+            <article class="about__images">
+                <div class="about_images_header d-flex justify-content-center my-3">
+                    <h3>Our Top 3 Most Rated Gods</h3>
+                </div>
+                <div class="row">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="under_text">JUPITER</div>
+                            <img class="d-block w-100" src="./img/jupiter.jpg" alt="First slide">
+                            <div class="under_text">JUPITER</div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="under_text">ODIN</div>
+                            <img class="d-block w-100" src="./img/odin.jpg" alt="Second slide">
+                            <div class="under_text">ODIN</div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="under_text">ZEUS</div>
+                            <img class="d-block w-100" src="./img/zevs.jpg" alt="Third slide">
+                            <div class="under_text">ZEUS</div>
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                </div>
+            </article>
+            <div class="d-flex justify-content-center mt-5">
+               <a href="./gods.html" class="btn btn-orange   btn-valhala">Valhalla/Olympus</a>
+            </div>
+        </section>
+
+
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <div class="container py-5">
+            <div class="row footer-section ">
+                <div class="col-12 col-lg-4 ">Contacts</div>
+                <div class="col-12 col-lg-4 ">Social Media</div>
+                <div class="col-12 col-lg-4 ">Join Us</div>
+            </div>
+            <div class="row  ">
+                <div class="col-12 col-lg-4 d-flex justify-content-center flex-column">
+
+                    <div class="pt-3"><i class="fas fa-envelope d-inline mr-2"></i>
+                        <adress>Email:
+                            mythology@gmail.rs</adress>
+                    </div>
+                    <div class="pt-3"><i class="fas fa-map-marker-alt d-inline pr-2"></i>
+                        <adress>Address: Koste Stamenkovića</adress>
+                    </div>
+                    <div class="pt-3"><i class="fas fa-city d-inline mr-1"></i>
+                        <adress>Location: Niš, Serbia</adress>
+                    </div>
+                </div>
+                <hr class="footer-hr">
+                <div class="col-12 col-lg-4">
+                    <a href=""><i class="fab fa-facebook mr-2 footer-links mt-3 "></i>Facebook</a><br>
+                    <a href=""><i class="fab fa-twitter mr-2 footer-links mt-3 "></i>Twitter</a><br>
+                    <a href=""><i class="fab fa-linkedin mr-2 footer-links mt-3 "></i>LinkedIn</a>
+                </div>
+                <hr class="footer-hr">
+                <div class="col-12 col-lg-4">
+
+                    <a class="d-block mt-2" href=""> Login</a>
+                    <a class="d-block mt-2" href="">Register</a>
+                </div>
+                <hr class="footer-hr">
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
